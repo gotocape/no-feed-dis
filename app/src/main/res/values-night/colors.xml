@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色模式：不再是纯黑，而是「墨纸」—— 暗褐底 + 米白字，纸感更连贯。 -->
+    <color name="ink">#E8E2D6</color>
+    <color name="on_ink">#14120F</color>
+    <color name="bg">#14120F</color>
+    <color name="surface">#1C1916</color>
+    <color name="surface_variant">#252119</color>
+    <color name="text_primary">#E8E2D6</color>
+    <color name="text_secondary">#9A9184</color>
+    <color name="outline">#3A342B</color>
+    <color name="error">#E0A89F</color>
+</resources>

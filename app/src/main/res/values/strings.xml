@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">直搜</string>
+
+    <!-- 首页视觉（参考图：纸 + 打字机字） -->
+    <string name="brand_title" translatable="false">No Feed</string>
+    <string name="brand_mark" translatable="false">***</string>
+
+    <string name="home_hint">搜索（关键词）</string>
+    <string name="action_search">搜索</string>
+    <string name="action_settings">设置</string>
+    <string name="action_back">返回</string>
+    <string name="action_edit">编辑</string>
+    <string name="footer_note">不联网 · 不推荐 · 只跳转</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_remember_last">记住上次选择的平台</string>
+    <string name="settings_platform_section">平台与跳转规则</string>
+    <string name="settings_platform_hint">点平台可改规则并测试；右侧开关控制是否出现在首页。</string>
+    <string name="settings_visible_switch">显示在首页</string>
+
+    <!-- 自定义平台 -->
+    <string name="action_new_platform">＋ 新建自定义平台</string>
+    <string name="dialog_new_platform_title">新建自定义平台</string>
+    <string name="dialog_edit_platform_title">编辑 %1$s</string>
+    <string name="field_name">平台名称</string>
+    <string name="field_name_hint">例如：豆瓣</string>
+    <string name="field_pkg">包名</string>
+    <string name="field_pkg_hint">例如：com.douban.frodo（留空则交给系统分发）</string>
+    <string name="field_uris">跳转规则（每行一条，第 1 条生效）</string>
+    <string name="error_name_empty">平台名称不能为空</string>
+    <string name="error_name_too_long">平台名称最多 8 个字</string>
+    <string name="action_delete_platform">删除这个平台</string>
+    <string name="confirm_delete_title">删除「%1$s」？</string>
+    <string name="confirm_delete_message">这个自定义平台和它的跳转规则会被永久删除，无法恢复。</string>
+    <string name="action_delete">删除</string>
+    <string name="action_cancel">取消</string>
+    <string name="row_custom_badge">自定义</string>
+    <string name="row_hidden_badge">已隐藏</string>
+    <string name="msg_platform_created">已创建「%1$s」</string>
+    <string name="msg_platform_deleted">已删除</string>
+    <string name="empty_no_platform">首页没有可用的平台，去设置里打开至少一个</string>
+
+    <string name="dialog_edit_title">%1$s · 跳转规则</string>
+    <string name="dialog_edit_message">第 1 条会被正式使用，其余仅作备用。\n\n点「测试」逐条验证，把真正能到搜索结果页的那条挪到第一行。\n\n可用占位符：{keyword} 编码一次 · {keyword2} 编码两次。</string>
+    <string name="dialog_save">保存</string>
+    <string name="dialog_test">测试</string>
+    <string name="dialog_reset">恢复默认</string>
+    <string name="uri_add_row">＋ 添加一条</string>
+    <string name="uri_remove">删除</string>
+    <string name="error_uri_empty">URI 不能为空</string>
+    <string name="error_uri_no_placeholder">这条缺少 {keyword} 或 {keyword2}</string>
+
+    <string name="error_no_keyword">请输入关键词</string>
+    <string name="error_rule_empty">至少填写一条规则</string>
+    <string name="error_rule_missing_placeholder">第 %1$d 行缺少 {keyword}</string>
+    <string name="error_truncated">关键词过长，已截断至 %1$d 字</string>
+    <string name="msg_saved">已保存</string>
+    <string name="msg_reset">已恢复默认规则</string>
+    <string name="msg_test_ok">已唤起「%1$s」，确认下是否停在搜索结果页</string>
+    <string name="msg_test_fail">全部失败：未安装，或这些 URI 都无效</string>
+    <string name="msg_test_empty">没有可测试的规则</string>
+
+    <string name="jump_failed_title">跳转失败</string>
+    <string name="jump_failed_message">没能唤起「%1$s」。\n\n可能是手机上未安装 %1$s，或者这条 URI 的 scheme 已完全失效。\n\n如果 App 能打开、但停在首页而不是搜索结果页，说明是路径不对 —— 去设置里换一条候选放到第一行再试。</string>
+    <string name="jump_failed_goto_settings">去设置</string>
+    <string name="jump_failed_ok">知道了</string>
+
+    <string name="row_customized">已修改</string>
+    <string name="row_more_rules">共 %1$d 条</string>
+</resources>

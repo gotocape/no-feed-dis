@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Chip 背景：选中 = 墨色实底；未选中 = 透明，只留一圈描边。
+    Material3 的 FilterChip 默认未选中是 surface 实底，在纸面上会变成一排白色小方块，
+    视觉上盖住了纹理，所以这里显式覆盖掉。
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/ink" android:state_checked="true" />
+    <item android:color="@android:color/transparent" />
+</selector>

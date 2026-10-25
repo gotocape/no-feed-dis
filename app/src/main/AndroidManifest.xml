@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        ⚠️ 红线：本文件永远不声明任何 <uses-permission>。
+
+        不声明 INTERNET，App 进程在系统层面就无法建立网络连接。
+        这是「首页零信息流」最硬的保证 —— 不靠代码自觉，靠权限隔离。
+        任何 PR 若在此处加权限，直接打回。
+
+        也正因如此，本 App 不能：
+          - 检测目标 App 是否安装（需 <queries> / QUERY_ALL_PACKAGES）
+          - 做网页兜底（需 INTERNET）
+        跳转失败统一由 JumpEngine 捕获异常后提示。
+    -->
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoFeedDis">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

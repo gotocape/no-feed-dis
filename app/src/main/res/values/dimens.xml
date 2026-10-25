@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_padding_h">20dp</dimen>
+    <dimen name="page_padding_v">16dp</dimen>
+    <dimen name="topbar_height">56dp</dimen>
+    <dimen name="input_min_height">56dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+</resources>

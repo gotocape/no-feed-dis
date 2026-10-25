@@ -1,0 +1,16 @@
+## Android SDK 路径模板
+##
+## 换机器时：把本文件复制成 local.properties，改成你自己机器上的 SDK 路径。
+## 或者干脆不建这个文件 —— 用 Android Studio 打开工程时会自动生成。
+##
+## 注意：Windows 路径里的反斜杠要写成双反斜杠（转义），冒号前也要加反斜杠。
+## local.properties 属于本机配置，不要提交到 Git（.gitignore 已排除）。
+
+## Windows 示例
+sdk.dir=C\:\\Android\\Sdk
+
+## macOS 示例
+# sdk.dir=/Users/你的用户名/Library/Android/sdk
+
+## Linux 示例
+# sdk.dir=/home/你的用户名/Android/Sdk

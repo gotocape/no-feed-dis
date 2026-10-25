@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NoFeedDis.Base" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 主色 = 墨色，按钮自动变成黑底白字（深色模式反转） -->
+        <item name="colorPrimary">@color/ink</item>
+        <item name="colorOnPrimary">@color/on_ink</item>
+        <item name="colorPrimaryContainer">@color/ink</item>
+        <item name="colorOnPrimaryContainer">@color/on_ink</item>
+        <item name="colorSecondary">@color/text_secondary</item>
+        <item name="colorOnSecondary">@color/on_ink</item>
+        <!-- 选中态的 Chip 用的是 secondaryContainer，不覆盖会变成淡紫色 -->
+        <item name="colorSecondaryContainer">@color/ink</item>
+        <item name="colorOnSecondaryContainer">@color/on_ink</item>
+
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline</item>
+        <item name="colorError">@color/error</item>
+
+        <item name="android:windowBackground">@color/bg</item>
+        <!-- 状态栏与页面同色，不做渐变不做透明，避免视觉噪音 -->
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme.NoFeedDis" parent="Theme.NoFeedDis.Base" />
+
+</resources>

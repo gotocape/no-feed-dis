@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    首页背景：宣纸底 + 纤维噪点。
+    纹理是程序生成的 128x128 无缝噪点（tools/gen_paper_texture.py），
+    alpha 压到 0.10，只留一点点明暗起伏，不抢内容。
+
+    不用纯色是因为纯色看起来像 App，有纹理才像纸。
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg" />
+        </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:alpha="0.15"
+            android:src="@drawable/paper_texture"
+            android:tileMode="repeat" />
+    </item>
+
+</layer-list>

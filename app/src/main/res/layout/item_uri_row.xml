@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置页里的一行 URI：输入框 + 测试 + 删除 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="2dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uriInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="11sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/testButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="@string/dialog_test"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/uri_remove"
+        android:focusable="true"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="×"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="16sp" />
+
+</LinearLayout>
