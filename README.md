@@ -31,13 +31,13 @@
 
 | 文件 | 体积 | 用途 |
 |---|---|---|
-| `直搜-noFeedDis-v1.3-ace.apk` | 4.6 MB | **装这个**，release 构建 |
-| `直搜-noFeedDis-v1.3-ace-debug.apk` | 6.7 MB | 需要抓 logcat 时才用 |
+| `no-feed-dis-v1.3-ace.apk` | 4.6 MB | **装这个**，release 构建 |
+| `no-feed-dis-v1.3-ace-debug.apk` | 6.7 MB | 需要抓 logcat 时才用 |
 
 签名相同、versionCode 都是 4，两者可以互相覆盖安装。
 
 ```bash
-adb install -r 直搜-noFeedDis-v1.3-ace.apk
+adb install -r no-feed-dis-v1.3-ace.apk
 ```
 
 或者把 APK 传到手机，文件管理器点开安装（首次提示「未知来源」，允许即可）。
@@ -208,7 +208,7 @@ v1.0 的写法是「第一条失败试第二条」。但只要第一条能把 Ap
 
 ```bash
 # 从 Releases 下载 APK 后
-"$ANDROID_HOME/build-tools/36.0.0/aapt2" dump permissions 直搜-noFeedDis-v1.3-ace.apk
+"$ANDROID_HOME/build-tools/36.0.0/aapt2" dump permissions no-feed-dis-v1.3-ace.apk
 ```
 
 ---
